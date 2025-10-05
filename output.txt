@@ -1,12 +1,12 @@
-Hello 
-World 
- 
-10 
-1.220000 
-1.22 
-@ 
-1 
-0 
+Hello
+World
+
+10
+1.220000
+1.22
+@
+1
+0
 
 Enter a number: 
 Your entered number: 101 
@@ -14,5 +14,11 @@ Your entered number: 101
 Enter a float: 
 Your entered float: 11.11 
 
-Enter int float & char: 
-Your entered int, float & char: 332526728 1.100000 @ 
+Enter int, float, and char: 
+You entered: 1 1.10 @
+
+Enter a long long integer: 
+Your entered long long: 140555275606392
+
+Enter a double: 
+Your entered double: 0.00000
