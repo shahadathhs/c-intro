@@ -5,5 +5,14 @@ World
 1.220000 
 1.22 
 @ 
+1 
+0 
 
-Enter a number: You entered: 101
+Enter a number: 
+Your entered number: 101 
+
+Enter a float: 
+Your entered float: 11.11 
+
+Enter int float & char: 
+Your entered int, float & char: 332526728 1.100000 @ 

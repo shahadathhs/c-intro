@@ -1,9 +1,8 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main(void)
 {
-    int number;
-
     printf("Hello \n");
     printf("World \n \n");
 
@@ -18,10 +17,31 @@ int main(void)
     char c = '@';
     printf("%c \n", c);
 
+    bool a = true;
+    bool b = false;
+
+    printf("%d \n", a);
+    printf("%d \n", b);
+
+    int number;
     printf("\nEnter a number: ");
     scanf("%d", &number);
+    
+    printf("\nYour entered number: %d \n", number);
+    
+    float floatNum;
+    printf("\nEnter a float: ");
+    scanf("%f", &floatNum);
 
-    printf("You entered: %d\n", number);
+    printf("\nYour entered float: %.2f \n", floatNum);
+
+    int ini;
+    float inf;
+    char inc;
+    printf("\nEnter int float & char: ");
+    scanf("%d %f %c", &ini, &inf, &inc);
+
+    printf("\nYour entered int, float & char: %d %f %c \n",&ini, inf, inc);
 
     return 0;
 }
