@@ -1,38 +1,5 @@
-=== Integer Arithmetic ===
-Addition: 13
-Subtraction: 7
-Multiplication: 30
-Division: 3
-Modulus: 1
-
-=== Mixed int & float Arithmetic ===
-Addition: 13.50
-Subtraction: 6.50
-Multiplication: 35.00
-Division: 2.86
-
-=== Relational Operators (Integer) ===
-10 > 3 : 1
-10 < 3 : 0
-10 >= 3 : 1
-10 <= 3 : 0
-10 == 3 : 0
-10 != 3 : 1
-
-=== Relational Operators (Mixed int & float) ===
-10 > 3.50 : 1
-10 < 3.50 : 0
-10 >= 3.50 : 1
-10 <= 3.50 : 0
-10 == 3.50 : 0
-10 != 3.50 : 1
-
-=== Logical Operators (Integer) ===
-(p > 0 && q > 0) : 1
-(p > 0 || q < 0) : 1
-!(p > 0) : 0
-
-=== Logical Operators (Mixed int & float) ===
-(a > b && f1 > 0) : 1
-(a < b || f2 == 0) : 1
-!(f1 > f2) : 0
+Simple if: 75 is greater than 50
+if-else: 75 is odd
+if-else ladder: Grade B
+Nested if-else: Excellent!
+If-else variation: Eligible male for service
