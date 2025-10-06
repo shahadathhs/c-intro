@@ -51,7 +51,23 @@ int main(void)
     printf("%d >= %.2f : %d\n", a, b, a >= b);
     printf("%d <= %.2f : %d\n", a, b, a <= b);
     printf("%d == %.2f : %d\n", a, b, a == b);
-    printf("%d != %.2f : %d\n", a, b, a != b);
+    printf("%d != %.2f : %d\n\n", a, b, a != b);
+
+    // Logical Operators
+    int p = 5;
+    int q = 10;
+
+    printf("=== Logical Operators (Integer) ===\n");
+    printf("(p > 0 && q > 0) : %d\n", (p > 0 && q > 0)); // AND
+    printf("(p > 0 || q < 0) : %d\n", (p > 0 || q < 0)); // OR
+    printf("!(p > 0) : %d\n\n", !(p > 0));               // NOT
+
+    float f1 = 2.5, f2 = 0.0;
+
+    printf("=== Logical Operators (Mixed int & float) ===\n");
+    printf("(a > b && f1 > 0) : %d\n", (a > b && f1 > 0)); // AND
+    printf("(a < b || f2 == 0) : %d\n", (a < b || f2 == 0)); // OR
+    printf("!(f1 > f2) : %d\n", !(f1 > f2));   
 
     return 0;
 }

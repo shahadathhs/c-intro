@@ -26,3 +26,13 @@ Division: 2.86
 10 <= 3.50 : 0
 10 == 3.50 : 0
 10 != 3.50 : 1
+
+=== Logical Operators (Integer) ===
+(p > 0 && q > 0) : 1
+(p > 0 || q < 0) : 1
+!(p > 0) : 0
+
+=== Logical Operators (Mixed int & float) ===
+(a > b && f1 > 0) : 1
+(a < b || f2 == 0) : 1
+!(f1 > f2) : 0
