@@ -1,24 +1,12 @@
-Hello
-World
+=== Integer Arithmetic ===
+Addition: 13
+Subtraction: 7
+Multiplication: 30
+Division: 3
+Modulus: 1
 
-10
-1.220000
-1.22
-@
-1
-0
-
-Enter a number: 
-Your entered number: 101 
-
-Enter a float: 
-Your entered float: 11.11 
-
-Enter int, float, and char: 
-You entered: 1 1.10 @
-
-Enter a long long integer: 
-Your entered long long: 140555275606392
-
-Enter a double: 
-Your entered double: 0.00000
+=== Mixed int & float Arithmetic ===
+Addition: 13.50
+Subtraction: 6.50
+Multiplication: 35.00
+Division: 2.86
