@@ -33,7 +33,25 @@ int main(void)
     printf("Addition: %.2f\n", mix_sum);
     printf("Subtraction: %.2f\n", mix_diff);
     printf("Multiplication: %.2f\n", mix_product);
-    printf("Division: %.2f\n", mix_division);
+    printf("Division: %.2f\n\n", mix_division);
+
+    // Relational Operators (Integer)
+    printf("=== Relational Operators (Integer) ===\n");
+    printf("%d > %d : %d\n", x, y, x > y);
+    printf("%d < %d : %d\n", x, y, x < y);
+    printf("%d >= %d : %d\n", x, y, x >= y);
+    printf("%d <= %d : %d\n", x, y, x <= y);
+    printf("%d == %d : %d\n", x, y, x == y);
+    printf("%d != %d : %d\n\n", x, y, x != y);
+
+    // Relational Operators (Mixed)
+    printf("=== Relational Operators (Mixed int & float) ===\n");
+    printf("%d > %.2f : %d\n", a, b, a > b);
+    printf("%d < %.2f : %d\n", a, b, a < b);
+    printf("%d >= %.2f : %d\n", a, b, a >= b);
+    printf("%d <= %.2f : %d\n", a, b, a <= b);
+    printf("%d == %.2f : %d\n", a, b, a == b);
+    printf("%d != %.2f : %d\n", a, b, a != b);
 
     return 0;
 }

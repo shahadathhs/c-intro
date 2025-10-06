@@ -10,3 +10,19 @@ Addition: 13.50
 Subtraction: 6.50
 Multiplication: 35.00
 Division: 2.86
+
+=== Relational Operators (Integer) ===
+10 > 3 : 1
+10 < 3 : 0
+10 >= 3 : 1
+10 <= 3 : 0
+10 == 3 : 0
+10 != 3 : 1
+
+=== Relational Operators (Mixed int & float) ===
+10 > 3.50 : 1
+10 < 3.50 : 0
+10 >= 3.50 : 1
+10 <= 3.50 : 0
+10 == 3.50 : 0
+10 != 3.50 : 1
