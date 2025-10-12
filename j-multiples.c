@@ -6,14 +6,14 @@ int main(void)
 
     scanf("%d %d", &A, &B);
 
-    if (A >= B)
+    if(A % B == 0 || B % A == 0)
     {
-        printf("Yes");
-    } else
+        printf("Multiples");
+    }
+    else
     {
-        printf("No");
+        printf("No Multiples");
     }
 
     return 0;
 }
-
