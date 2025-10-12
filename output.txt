@@ -1,1 +1,23 @@
--3 -1
+Initial values: a = 1, b = 2
+
+Post-increment:
+After c = a++; c = 1, a = 2
+
+Pre-increment:
+After d = ++b; d = 3, b = 3
+
+Initial values: x = 10, y = 10
+
+Post-decrement:
+After p = x--; p = 10, x = 9
+
+Pre-decrement:
+After q = --y; q = 9, y = 9
+
+Initial num = 10
+
+After num += 5 → num = 15
+After num -= 3 → num = 12
+After num *= 3 → num = 36
+After num /= 4 → num = 9
+After num %= 3 → num = 0
