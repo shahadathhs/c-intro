@@ -41,11 +41,34 @@ int main(void)
     }
     // decrease array size
     n--;
-    
+
     for (int i = 0; i <= n; i++)
     {
         printf("%d ", a[i]);
     }
+
+    printf("\n");
+
+    // reverse
+    int i = 0;
+    int j = n;
+
+    for (int index = 0; i < j || i == j; index++)
+    {
+        int temp = a[i];
+        
+        a[i] = a[j];
+        a[j] = temp;
+
+        i++;
+        j--;
+    }
+
+    for (int i = 0; i <= n; i++)
+    {
+        printf("%d ", a[i]);
+    }
+    
 
     return 0;
 }
