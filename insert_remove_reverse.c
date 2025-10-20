@@ -29,7 +29,23 @@ int main(void)
         printf("%d ", a[i]);
     }
 
-    // 
+    printf("\n");
+
+    // remove
+    int dIdx;
+    scanf("%d", &dIdx);
+
+    for (int i = dIdx; i < n; i++)
+    {
+        a[i] = a[i + 1];
+    }
+    // decrease array size
+    n--;
+    
+    for (int i = 0; i <= n; i++)
+    {
+        printf("%d ", a[i]);
+    }
 
     return 0;
 }
