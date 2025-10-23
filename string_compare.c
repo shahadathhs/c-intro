@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdbool.h>
+#include<string.h>
 
 int main(void)
 {
@@ -40,6 +41,8 @@ int main(void)
         }
 
     }
+
+    printf("\n%d", strcmp(a,b));
 
     return 0;
 }
