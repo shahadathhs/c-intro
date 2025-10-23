@@ -1,6 +1,2 @@
-Shahadath
-0
-Enter a line: 
-Shahadath Hossen Sajib
-SAJIB SAJIB
-5 5
+apple apple 
+appleapple apple 
