@@ -68,7 +68,33 @@
     
 //     return 0;
 // }
+// #include<stdio.h>
+
+// int main(void)
+// {
+//     int T = 0;
+//     scanf("%d", &T);
+
+//     for (int i = 0; i < T; i++)
+//     {
+//         int M1, M2, D;
+
+//         scanf("%d %d %d", &M1, &M2, &D);
+
+//         int totalWork = M1 * D;
+//         int totalMen = M1 + M2;
+//         int newDays = totalWork / totalMen;
+
+//         int daysFewer = D - newDays;
+
+//         printf("%d\n", daysFewer);
+//     }
+    
+//     return 0;
+// }
+
 #include<stdio.h>
+#include<string.h>
 
 int main(void)
 {
@@ -77,17 +103,32 @@ int main(void)
 
     for (int i = 0; i < T; i++)
     {
-        int M1, M2, D;
+        char s[10000];
+        scanf("%s", s);
 
-        scanf("%d %d %d", &M1, &M2, &D);
+        int cCap = 0, cSml = 0, cDgt = 0;
+        
+        int length = strlen(s);
 
-        int totalWork = M1 * D;
-        int totalMen = M1 + M2;
-        int newDays = totalWork / totalMen;
+        for (int i = 0; i < length; i++)
+        {
+            if(s[i] >= 'A' && s[i] <= 'Z')
+            {
+                cCap++;
+            }
+            if (s[i] >= 'a' && s[i] <= 'z')
+            {
+                cSml++;
+            }
 
-        int daysFewer = D - newDays;
+            if (s[i] >= '0' && s[i] <= '9')
+            {
+                cDgt++;
+            }
+        }
+        
 
-        printf("%d\n", daysFewer);
+        printf("%d %d %d\n", cCap, cSml, cDgt);
     }
     
     return 0;
