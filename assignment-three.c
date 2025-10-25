@@ -30,41 +30,65 @@
     
 //     return 0;
 // }
+// #include<stdio.h>
+// #include<string.h>
+
+// int main(void)
+// {
+//     char s[100000];
+//     scanf("%s", s);
+
+//     int length = strlen(s);
+
+//     char v[5] = {'a', 'e', 'i', 'o', 'u'};
+
+//     int c = 0;
+
+//     for (int i = 0; i < length; i++)
+//     {
+//         int isVowel = 0;
+//         for (int j = 0; j < 5; j++)
+//         {
+//             if(s[i] == v[j])
+//             {
+//                 isVowel = 1;
+//                 break;
+//             }
+//         }
+
+//         if (!isVowel)
+//         {
+//             c++;
+//         }
+        
+//     }
+
+//     printf("%d", c);
+    
+    
+//     return 0;
+// }
 #include<stdio.h>
-#include<string.h>
 
 int main(void)
 {
-    char s[100000];
-    scanf("%s", s);
+    int T = 0;
+    scanf("%d", &T);
 
-    int length = strlen(s);
-
-    char v[5] = {'a', 'e', 'i', 'o', 'u'};
-
-    int c = 0;
-
-    for (int i = 0; i < length; i++)
+    for (int i = 0; i < T; i++)
     {
-        int isVowel = 0;
-        for (int j = 0; j < 5; j++)
-        {
-            if(s[i] == v[j])
-            {
-                isVowel = 1;
-                break;
-            }
-        }
+        int M1, M2, D;
 
-        if (!isVowel)
-        {
-            c++;
-        }
-        
+        scanf("%d %d %d", &M1, &M2, &D);
+
+        int totalWork = M1 * D;
+        int totalMen = M1 + M2;
+        int newDays = totalWork / totalMen;
+
+        int daysFewer = D - newDays;
+
+        printf("%d\n", daysFewer);
     }
-
-    printf("%d", c);
-    
     
     return 0;
 }
