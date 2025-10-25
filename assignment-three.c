@@ -93,43 +93,72 @@
 //     return 0;
 // }
 
+// #include<stdio.h>
+// #include<string.h>
+
+// int main(void)
+// {
+//     int T = 0;
+//     scanf("%d", &T);
+
+//     for (int i = 0; i < T; i++)
+//     {
+//         char s[10000];
+//         scanf("%s", s);
+
+//         int cCap = 0, cSml = 0, cDgt = 0;
+        
+//         int length = strlen(s);
+
+//         for (int i = 0; i < length; i++)
+//         {
+//             if(s[i] >= 'A' && s[i] <= 'Z')
+//             {
+//                 cCap++;
+//             }
+//             if (s[i] >= 'a' && s[i] <= 'z')
+//             {
+//                 cSml++;
+//             }
+
+//             if (s[i] >= '0' && s[i] <= '9')
+//             {
+//                 cDgt++;
+//             }
+//         }
+        
+
+//         printf("%d %d %d\n", cCap, cSml, cDgt);
+//     }
+    
+//     return 0;
+// }
+
 #include<stdio.h>
 #include<string.h>
 
 int main(void)
 {
-    int T = 0;
-    scanf("%d", &T);
+    char s[10000];
+    scanf("%s", s);
 
-    for (int i = 0; i < T; i++)
+    int length = strlen(s);
+
+    int counts[26] = {0};
+
+    for (int i = 0; i < length; i++)
     {
-        char s[10000];
-        scanf("%s", s);
-
-        int cCap = 0, cSml = 0, cDgt = 0;
-        
-        int length = strlen(s);
-
-        for (int i = 0; i < length; i++)
-        {
-            if(s[i] >= 'A' && s[i] <= 'Z')
-            {
-                cCap++;
-            }
-            if (s[i] >= 'a' && s[i] <= 'z')
-            {
-                cSml++;
-            }
-
-            if (s[i] >= '0' && s[i] <= '9')
-            {
-                cDgt++;
-            }
-        }
-        
-
-        printf("%d %d %d\n", cCap, cSml, cDgt);
+        char c = s[i];
+        counts[c - 'a']++;
     }
+
+    for (int i = 0; i < 26; i++)
+    {
+        if (counts[i] > 0) {
+            printf("%c - %d\n", i + 'a', counts[i]);
+        }
+    }
+    
     
     return 0;
 }
