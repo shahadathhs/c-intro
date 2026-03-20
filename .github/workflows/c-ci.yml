@@ -1,0 +1,48 @@
+name: C CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install build tools
+      run: sudo apt update && sudo apt install -y build-essential
+
+    - name: Compile and Run C files
+      run: |
+        # Find all .c files recursively and compile/run them
+        find . -name "*.c" | while read -r f; do
+          echo "----------------------------------------"
+          echo "Processing $f"
+          
+          # Create a temporary output file name
+          out="${f%.c}.out"
+          
+          # Compile
+          if gcc -o "$out" "$f"; then
+            echo "Compilation successful: $f"
+            
+            # Run with timeout and input if available
+            if [ -f "input.txt" ]; then
+              echo "Running with input.txt..."
+              timeout 5 "./$out" < input.txt > output.txt || echo "Execution failed or timed out: $f"
+            else
+              echo "Running..."
+              timeout 5 "./$out" || echo "Execution failed or timed out: $f"
+            fi
+            
+            # Clean up the binary
+            rm "$out"
+          else
+            echo "Compilation failed: $f"
+            exit 1
+          fi
+        done
